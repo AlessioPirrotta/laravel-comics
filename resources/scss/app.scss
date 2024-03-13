@@ -1,7 +1,7 @@
 
+@use "./partials/_variables" as *;
+@use "./partials/_mixins" as *;
 @import "bootstrap/scss/bootstrap";
-@use "./partials/variables" as *;
-@use "./partials/mixins" as *;
 
 * {
     box-sizing: border-box;
@@ -11,6 +11,8 @@
 
 html {
     font-family: sans-serif;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 img {
@@ -18,8 +20,5 @@ img {
     display: block;
 }
 
-body{
-    background-color: red;
-}
 
 

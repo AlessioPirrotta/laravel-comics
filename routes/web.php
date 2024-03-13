@@ -15,8 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    $greeting = 'Hello World';
-
     $data = [
         [
             'name' => 'Fabio'
@@ -33,12 +31,7 @@ Route::get('/', function () {
     ];
 
 
-    return view('welcome', compact('data', 'greeting'));
-})->name('homePage');
+    return view('welcome', compact('data'));
+});
 
-Route::get('/about', function () {
 
-    $lorem = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto aut excepturi deleniti cupiditate deserunt sint reprehenderit quibusdam tempore voluptas quis, nisi id voluptatibus quaerat repellat doloremque eum eos laborum eaque.';
-
-    return view('about', compact('lorem'));
-})->name('aboutPage');

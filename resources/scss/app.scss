@@ -11,13 +11,93 @@
 
 html {
     font-family: sans-serif;
-    width: 100vw;
     overflow-x: hidden;
 }
 
 img {
     width: 100%;
     display: block;
+}
+
+header{
+    #main {
+        background-color: white;
+        width: 101%;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 200px;
+
+    }
+
+    ul {
+        list-style: none;
+        text-transform: uppercase;
+        font-weight: 600;
+        display: flex;
+        gap: 20px
+    }
+}
+
+main{
+    #jumbo{
+        height: 400px;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    button{
+        color: white;
+        background-color:#0282f9;
+        width: 200px;
+        height: 50px;
+        margin-right: 50px;
+        border: none;
+        margin-bottom: 20px;
+
+    }
+
+
+    figure{ color: white;
+        width: 180px;
+        aspect-ratio: 1;
+        overflow: hidden;
+    }
+
+
+
+    #card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #cur{
+        position: absolute;
+        top: 370px;
+        left: 200px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+}
+
+
+#center{
+    img{
+        width: 60px;
+    };
+
+    #locator{
+        width: 40px;
+    }
+    padding-block: 40px;
+
+    display:flex;
+
+    gap:90px
 }
 
 

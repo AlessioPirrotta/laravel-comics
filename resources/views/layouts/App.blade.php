@@ -7,8 +7,10 @@
     <title>Document</title>
     @vite('resources/js/app.js')
 </head>
-<body>
+<body style="">
     @include('components.header')
-    @include('components.main')
+    @yield('main')
+    @include('components.shop')
+    @include('components.footer')
 </body>
 </html>

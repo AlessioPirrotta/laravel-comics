@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
 
     $data = ['character', 'comic', 'movies', 'tv', 'games', 'collectibles', 'videos', 'fans', 'news', 'shop'];
-    
+
 
     $comics = [
     [
@@ -130,11 +130,12 @@ Route::get('/', function () {
         "type" => "graphic novel",
     ]
 ];
-    
 
 
-    return view('App', compact('data', 'comics'));
+
+    return view('Pages.main', compact('data', 'comics'));
 });
+
 
 
 
